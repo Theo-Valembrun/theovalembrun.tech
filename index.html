@@ -14,11 +14,15 @@
 
     <header class="header">
         <div class="container">
-            <h1>Theo Shadley Valembrun</h1>
-            <p class="tagline">IT Specialist with 3+ years of experience in network operations, system administration, and customer support within the telecom industry.</p>
+            <div class="header-top">
+                <!-- Profile avatar removed as per request -->
+                <div class="profile-details">
+                    <h1>Theo Shadley Valembrun</h1>
+                    <p class="tagline">IT Specialist with 3+ years of experience in network operations, system administration, and customer support within the telecom industry.</p>
+                </div>
+            </div>
             <div class="contact-info">
-                <span><i class="fas fa-map-marker-alt"></i> Port-au-Prince</span>
-                <!-- Removed email and phone number -->
+                <span><i class="fas fa-map-marker-alt"></i> Port-au-Prince, Haiti</span>
                 <span><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/theovalembrun/" target="_blank">linkedin.com/in/theovalembrun/</a></span>
                 <span><i class="fab fa-github"></i> <a href="https://github.com/Theo-Valembrun" target="_blank">github.com/Theo-Valembrun</a></span>
             </div>
@@ -31,6 +35,7 @@
     <nav class="navbar">
         <div class="container">
             <a href="#summary" class="nav-link active" data-target="summary">Summary</a>
+            <a href="#services" class="nav-link" data-target="services">What I'm Doing</a>
             <a href="#experience" class="nav-link" data-target="experience">Experience</a>
             <a href="#education" class="nav-link" data-target="education">Education</a>
             <a href="#skills" class="nav-link" data-target="skills">Skills</a>
@@ -43,11 +48,75 @@
         <!-- Summary Section (Default Home Page) -->
         <section id="summary" class="content-section active">
             <h2>Summary</h2>
-            <ul>
-                <li>Managed network service provisioning for internet, VPN, and IP telephony, troubleshooting issues and ensuring high service uptime for corporate and VIP customers.</li>
-                <li>Reduced network downtime by proactively monitoring and resolving incidents using SolarWinds and PRTG, improving service reliability.</li>
-                <li>Provided technical support to 500+ users, ensuring timely resolution of connectivity, software, and hardware issues via Zendesk and ServiceDesk.</li>
-                <li>Implemented secure enterprise network infrastructures, including VPN tunnels, DHCP/DNS servers, and firewall configurations, enhancing security and efficiency.</li>
+            <div class="summary-entry">
+                <ul>
+                    <li>Managed network service provisioning for internet, VPN, and IP telephony, troubleshooting issues and ensuring high service uptime for corporate and VIP customers.</li>
+                    <li>Reduced network downtime by proactively monitoring and resolving incidents using SolarWinds and PRTG, improving service reliability.</li>
+                    <li>Provided technical support to 500+ users, ensuring timely resolution of connectivity, software, and hardware issues via Zendesk and ServiceDesk.</li>
+                    <li>Implemented secure enterprise network infrastructures, including VPN tunnels, DHCP/DNS servers, and firewall configurations, enhancing security and efficiency.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- What I'm Doing (Services) Section -->
+        <section id="services" class="content-section">
+            <h2>What I'm Doing</h2>
+            <ul class="service-list">
+                <li class="service-item">
+                    <div class="service-icon-box">
+                        <i class="fas fa-headset"></i> <!-- IT Support Icon -->
+                    </div>
+                    <div class="service-content-box">
+                        <h4 class="h4 service-item-title">IT Support & Troubleshooting</h4>
+                        <p class="service-item-text">
+                            Providing expert technical assistance and resolving complex hardware, software, and connectivity issues for diverse user bases.
+                        </p>
+                    </div>
+                </li>
+                <li class="service-item">
+                    <div class="service-icon-box">
+                        <i class="fas fa-network-wired"></i> <!-- Network Design Icon -->
+                    </div>
+                    <div class="service-content-box">
+                        <h4 class="h4 service-item-title">Network Design & Planning</h4>
+                        <p class="service-item-text">
+                            Designing robust and scalable network architectures, including LAN/WAN, VPN, and IP telephony solutions.
+                        </p>
+                    </div>
+                </li>
+                <li class="service-item">
+                    <div class="service-icon-box">
+                        <i class="fas fa-cogs"></i> <!-- Implementation Icon -->
+                    </div>
+                    <div class="service-content-box">
+                        <h4 class="h4 service-item-title">System Implementation & Deployment</h4>
+                        <p class="service-item-text">
+                            Implementing and deploying secure network infrastructures, servers, and telecommunication systems.
+                        </p>
+                    </div>
+                </li>
+                <li class="service-item">
+                    <div class="service-icon-box">
+                        <i class="fas fa-server"></i> <!-- Administration Icon -->
+                    </div>
+                    <div class="service-content-box">
+                        <h4 class="h4 service-item-title">Network & System Administration</h4>
+                        <p class="service-item-text">
+                            Managing and maintaining network devices, servers (Windows/Linux), Active Directory, DNS, and DHCP for optimal performance.
+                        </p>
+                    </div>
+                </li>
+                <li class="service-item">
+                    <div class="service-icon-box">
+                        <i class="fas fa-handshake"></i> <!-- Customer Service Icon -->
+                    </div>
+                    <div class="service-content-box">
+                        <h4 class="h4 service-item-title">Customer Service & Relationship Management</h4>
+                        <p class="service-item-text">
+                            Ensuring high customer satisfaction through clear communication, timely issue resolution, and proactive service delivery.
+                        </p>
+                    </div>
+                </li>
             </ul>
         </section>
 
@@ -138,13 +207,21 @@
         <!-- Certifications and Courses Section -->
         <section id="certifications" class="content-section">
             <h2>Certifications and Courses</h2>
-            <ul>
-                <li>Career Essentials in System Administration by Microsoft and LinkedIn - February 2024</li>
-                <li>CCNA: Enterprise Networking, Security, and Automation - November 2023</li>
-                <li>CCNA: Switching, Routing, and Wireless Essentials - November 2023</li>
-                <li>CCNA: Introductions to Networks - November 2023</li>
-                <li>Google IT Support Specialization - September 2022</li>
-            </ul>
+            <div class="certification-entry">
+                <p>Career Essentials in System Administration by Microsoft and LinkedIn - February 2024</p>
+            </div>
+            <div class="certification-entry">
+                <p>CCNA: Enterprise Networking, Security, and Automation - November 2023</p>
+            </div>
+            <div class="certification-entry">
+                <p>CCNA: Switching, Routing, and Wireless Essentials - November 2023</p>
+            </div>
+            <div class="certification-entry">
+                <p>CCNA: Introductions to Networks - November 2023</p>
+            </div>
+            <div class="certification-entry">
+                <p>Google IT Support Specialization - September 2022</p>
+            </div>
         </section>
 
         <!-- Contact Section -->
@@ -181,112 +258,6 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const navLinks = document.querySelectorAll('.nav-link');
-            const contentSections = document.querySelectorAll('.content-section');
-            const themeToggle = document.getElementById('theme-toggle');
-            const body = document.body;
-            const contactForm = document.getElementById('contact-form');
-
-            // Function to show a specific section and hide others
-            const showSection = (targetId) => {
-                contentSections.forEach(section => {
-                    section.classList.remove('active');
-                    section.style.display = 'none'; // Explicitly hide
-                });
-
-                const targetSection = document.getElementById(targetId);
-                if (targetSection) {
-                    targetSection.classList.add('active');
-                    targetSection.style.display = 'block'; // Explicitly show
-                }
-            };
-
-            // Function to update active navigation link
-            const updateActiveNavLink = (targetId) => {
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                });
-                const activeLink = document.querySelector(`.nav-link[data-target="${targetId}"]`);
-                if (activeLink) {
-                    activeLink.classList.add('active');
-                }
-            };
-
-            // Theme toggle functionality
-            const currentTheme = localStorage.getItem('theme');
-            if (currentTheme) {
-                body.classList.add(currentTheme);
-                if (currentTheme === 'dark-mode') {
-                    themeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
-                    themeToggle.querySelector('.toggle-text').textContent = 'Light Mode';
-                }
-            }
-
-            themeToggle.addEventListener('click', () => {
-                body.classList.toggle('dark-mode');
-                if (body.classList.contains('dark-mode')) {
-                    localStorage.setItem('theme', 'dark-mode');
-                    themeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
-                    themeToggle.querySelector('.toggle-text').textContent = 'Light Mode';
-                } else {
-                    localStorage.setItem('theme', 'light-mode');
-                    themeToggle.querySelector('i').classList.replace('fa-sun', 'fa-moon');
-                    themeToggle.querySelector('.toggle-text').textContent = 'Dark Mode';
-                }
-            });
-
-
-            // Event listeners for navigation links
-            navLinks.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault(); // Prevent default anchor link behavior
-                    const targetId = link.getAttribute('data-target');
-                    showSection(targetId);
-                    updateActiveNavLink(targetId);
-                    // Update URL hash without causing a page reload
-                    history.pushState(null, '', `#${targetId}`);
-                });
-            });
-
-            // Handle initial load and back/forward button navigation
-            const initialHash = window.location.hash.substring(1); // Remove '#'
-            if (initialHash && document.getElementById(initialHash)) {
-                showSection(initialHash);
-                updateActiveNavLink(initialHash);
-            } else {
-                // Default to 'summary' if no hash or invalid hash
-                showSection('summary');
-                updateActiveNavLink('summary');
-            }
-
-            window.addEventListener('popstate', () => {
-                const hash = window.location.hash.substring(1);
-                if (hash && document.getElementById(hash)) {
-                    showSection(hash);
-                    updateActiveNavLink(hash);
-                } else {
-                    showSection('summary');
-                    updateActiveNavLink('summary');
-                }
-            });
-
-            // Contact Form Submission
-            contactForm.addEventListener('submit', (e) => {
-                e.preventDefault(); // Prevent default form submission
-
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const subject = document.getElementById('subject').value;
-                const message = document.getElementById('message').value;
-
-                // Construct mailto link
-                const mailtoLink = `mailto:theo.valembrun@ieee.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
-
-                window.location.href = mailtoLink; // Open default email client
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
