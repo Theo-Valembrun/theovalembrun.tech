@@ -1,0 +1,537 @@
+/* CSS Variables for Themes */
+:root {
+    --bg-color: #f0f2f5;
+    --text-color: #2c3e50;
+    --header-bg: #1a202c;
+    --header-text: #ecf0f1;
+    --header-tagline: #a0aec0;
+    --accent-color: #63b3ed;
+    --accent-hover: #90cdf4;
+    --navbar-bg: #2d3748;
+    --navbar-link-color: #cbd5e0;
+    --navbar-link-hover: #4a5568;
+    --section-bg: #ffffff;
+    --section-shadow: rgba(0, 0, 0, 0.1);
+    --section-border: #e2e8f0;
+    --heading-color: #2c3e50;
+    --subheading-color: #2d3748;
+    --company-color: #4a5568;
+    --date-location-color: #718096;
+    --bullet-color: #63b3ed;
+    --checkmark-color: #38a169;
+    --footer-bg: #1a202c;
+    --footer-text: #cbd5e0;
+    --toggle-bg: #63b3ed;
+    --toggle-text: #ffffff;
+    --toggle-hover: #4a90e2;
+    --form-border: #ccc;
+    --form-focus-border: #63b3ed;
+    --form-placeholder: #a0aec0;
+}
+
+body.dark-mode {
+    --bg-color: #1a202c;
+    --text-color: #e2e8f0;
+    --header-bg: #2d3748;
+    --header-text: #ffffff;
+    --header-tagline: #cbd5e0;
+    --accent-color: #90cdf4;
+    --accent-hover: #63b3ed;
+    --navbar-bg: #4a5568;
+    --navbar-link-color: #e2e8f0;
+    --navbar-link-hover: #63708a;
+    --section-bg: #2d3748;
+    --section-shadow: rgba(0, 0, 0, 0.4);
+    --section-border: #4a5568;
+    --heading-color: #ffffff;
+    --subheading-color: #ffffff;
+    --company-color: #cbd5e0;
+    --date-location-color: #a0aec0;
+    --bullet-color: #90cdf4;
+    --checkmark-color: #68d391;
+    --footer-bg: #2d3748;
+    --footer-text: #e2e8f0;
+    --toggle-bg: #90cdf4;
+    --toggle-text: #1a202c;
+    --toggle-hover: #63b3ed;
+    --form-border: #63708a;
+    --form-focus-border: #90cdf4;
+    --form-placeholder: #a0aec0;
+}
+
+
+/* General Body and Container Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.7;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme change */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 6px 12px var(--section-shadow);
+    position: relative; /* For positioning the toggle button */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.header .tagline {
+    font-size: 1.3em;
+    margin-top: 15px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--header-tagline);
+}
+
+.contact-info {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    font-size: 1em;
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: var(--accent-color);
+    font-size: 1.2em;
+}
+
+.contact-info a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-info a:hover {
+    color: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--toggle-bg);
+    color: var(--toggle-text);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+    background-color: var(--toggle-hover);
+    transform: translateY(-2px);
+}
+
+.theme-toggle i {
+    font-size: 1.1em;
+}
+
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: var(--navbar-bg);
+    padding: 12px 0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav-link {
+    color: var(--navbar-link-color);
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.95em;
+}
+
+.nav-link:hover {
+    background-color: var(--navbar-link-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Section Styles (for multi-page functionality) */
+.content-section {
+    display: none;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.content-section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Section Styles (general for all content sections) */
+.section {
+    background-color: var(--section-bg);
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px var(--section-shadow);
+    border: 1px solid var(--section-border);
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section h2 {
+    color: var(--heading-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4em;
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 12px;
+    display: inline-block;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* List Styles (Summary, Certifications, Job Entry) */
+.summary ul, .certifications ul, .job-entry ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.summary ul li, .certifications ul li, .job-entry ul li {
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+    font-size: 1.05em;
+}
+
+.summary ul li:before, .certifications ul li:before {
+    content: '\2022';
+    color: var(--bullet-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1.2em;
+    margin-left: -1.2em;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+.job-entry ul li:before {
+    content: '\2713';
+    color: var(--checkmark-color);
+    font-weight: bold;
+    display: inline-inblock;
+    width: 1.2em;
+    margin-left: -1.2em;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+/* Professional Experience Styles */
+.job-entry {
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--section-border);
+}
+
+.job-entry:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.job-entry h3 {
+    color: var(--subheading-color);
+    font-size: 1.8em;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.job-entry .company {
+    font-weight: 700;
+    color: var(--company-color);
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    font-size: 1.1em;
+}
+
+.job-entry .location {
+    font-weight: normal;
+    color: var(--date-location-color);
+    font-size: 0.95em;
+}
+
+.job-entry .dates {
+    font-style: normal;
+    color: var(--date-location-color);
+    margin-bottom: 15px;
+    display: block;
+    font-size: 0.95em;
+}
+
+.job-entry .description {
+    color: var(--company-color);
+    margin-bottom: 15px;
+}
+
+/* Education Styles */
+.education-entry {
+    margin-bottom: 25px;
+}
+
+.education-entry h3 {
+    color: var(--subheading-color);
+    font-size: 1.6em;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.education-entry .institution {
+    font-weight: 700;
+    color: var(--company-color);
+    margin-bottom: 5px;
+    font-size: 1.05em;
+}
+
+.education-entry .dates {
+    font-style: normal;
+    color: var(--date-location-color);
+    font-size: 0.95em;
+}
+
+/* Skills Section Styles */
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-category h3 {
+    color: var(--subheading-color);
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.skill-category p {
+    margin: 0;
+    padding-left: 15px;
+    color: var(--company-color);
+    font-size: 1.05em;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer p {
+    margin: 8px 0;
+}
+
+/* Contact Form Styles */
+.contact-intro {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    padding: 12px 15px;
+    border: 1px solid var(--form-border);
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--section-bg); /* Match section background */
+    color: var(--text-color);
+    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--form-placeholder);
+    opacity: 0.8; /* Make placeholder slightly lighter */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--form-focus-border);
+    box-shadow: 0 0 0 3px rgba(99, 179, 237, 0.3); /* Accent color glow */
+}
+
+.submit-button {
+    background-color: var(--accent-color);
+    color: var(--toggle-text);
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: center; /* Center the button */
+    width: fit-content; /* Make button only as wide as its content */
+}
+
+.submit-button:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+.form-note {
+    font-size: 0.9em;
+    color: var(--date-location-color);
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.5em;
+    }
+    .header .tagline {
+        font-size: 1.1em;
+    }
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .section {
+        padding: 25px;
+    }
+    .section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    .job-entry h3 {
+        font-size: 1.5em;
+    }
+    .navbar .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-link {
+        width: calc(100% - 40px); /* Account for padding */
+        text-align: center;
+        padding: 10px 0;
+    }
+    .theme-toggle {
+        position: static; /* Remove absolute positioning on small screens */
+        margin-top: 20px;
+    }
+    .contact-form {
+        padding: 0 10px; /* Add some horizontal padding for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 2em;
+    }
+    .header .tagline {
+        font-size: 0.9em;
+    }
+    .section h2 {
+        font-size: 1.7em;
+    }
+    .job-entry .company {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .job-entry .location {
+        margin-top: 5px;
+    }
+    .section {
+        padding: 20px;
+    }
+}
